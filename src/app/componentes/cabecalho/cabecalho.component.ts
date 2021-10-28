@@ -5,7 +5,7 @@ import { UsuarioService } from 'src/app/autenticacao/usuario/usuario.service';
 @Component({
   selector: 'app-cabecalho',
   templateUrl: './cabecalho.component.html',
-  styleUrls: ['./cabecalho.component.css'],
+  styleUrls: ['./cabecalho.component.scss'],
 })
 export class CabecalhoComponent {
   user$ = this.usuarioService.retornaUsuario();
