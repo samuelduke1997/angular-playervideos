@@ -6,7 +6,7 @@ import { MenuModule } from '../menu/menu.module';
 
 @NgModule({
   declarations: [CabecalhoComponent],
-  imports: [CommonModule, RouterModule, MenuModule],
+  imports: [CommonModule, RouterModule],
   exports: [CabecalhoComponent],
 })
 export class CabecalhoModule {}

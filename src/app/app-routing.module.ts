@@ -20,7 +20,7 @@ const routes: Routes = [
       import('./pagina-inicial/pagina-inicial.module').then(
         (m) => m.PaginaInicialModule
       ),
-    canLoad: [LoginGuard],
+    //canLoad: [LoginGuard],
   },
 ];
 

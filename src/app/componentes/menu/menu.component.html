@@ -1,13 +1,11 @@
-<div [ngClass]="{ 'active-menu': mostraMenu }">
-  <div class="menu-bar">
-    <i
-      class="fa fa-window-close"
-      (click)="abreMenu()"
-      (keyup.space)="abreMenu()"
-    >
-    </i>
-    <ng-content></ng-content>
-  </div>
-
-  <div class="overlay" (click)="abreMenu()"></div>
+<div class="menu-bar">
+  <h2>Player Vídeo</h2>
+  <ul class="list-unstyled">
+    <li routerLinkActive="active">
+      <a [routerLink]="['/pagina-inicial']">Ínicio</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/home']">Novo Animal</a>
+    </li>
+  </ul>
 </div>

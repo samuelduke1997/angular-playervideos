@@ -1,10 +1,16 @@
+import { PaginaInicialComponent } from './pagina-inicial.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: PaginaInicialComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class PaginaInicialRoutingModule { }
+export class PaginaInicialRoutingModule {}
