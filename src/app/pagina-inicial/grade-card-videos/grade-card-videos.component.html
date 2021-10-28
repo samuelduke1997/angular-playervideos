@@ -1,6 +1,7 @@
 <div class="card-grade">
-  <app-cartao><app-video></app-video></app-cartao>
-  <app-cartao><app-video></app-video></app-cartao>
-  <app-cartao><app-video></app-video></app-cartao>
-  <app-cartao><app-video></app-video></app-cartao>
+  <div *ngFor="let video of videos" class="col-2">
+    <app-cartao
+      ><app-video [title]="video.title" [id]="video.id"></app-video
+    ></app-cartao>
+  </div>
 </div>
